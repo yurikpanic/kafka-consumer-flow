@@ -1,0 +1,8 @@
+target
+project/target
+*~
+.ensime*
+.idea
+nohup.out
+logs
+*.log
