@@ -18,18 +18,17 @@ scalacOptions := Seq(
   "-Ywarn-dead-code")
 
 libraryDependencies := {
-  val akkaV          = "2.4.17"
-  val scalaTestV     = "3.0.0"
+  val akkaV          = "2.5.2"
+  val scalaTestV     = "3.0.1"
   val dockerTestkitV = "0.9.1"
-  val kafkaVersion   = "0.10.2.0"
+  val kafkaVersion   = "0.10.2.1"
 
   Seq(
     "org.apache.kafka"  % "kafka-clients"                % kafkaVersion,
     "com.typesafe.akka" %% "akka-actor"                  % akkaV,
     "com.typesafe.akka" %% "akka-stream"                 % akkaV,
     "com.typesafe.akka" %% "akka-slf4j"                  % akkaV,
-    "org.slf4j"         % "slf4j-api"                    % "1.7.21",
-    "ch.qos.logback"    % "logback-classic"              % "1.1.7",
+    "ch.qos.logback"    % "logback-classic"              % "1.2.3",
     "com.typesafe.akka" %% "akka-testkit"                % akkaV % Test,
     "org.scalatest"     %% "scalatest"                   % scalaTestV % Test,
     "com.whisk"         %% "docker-testkit-scalatest"    % dockerTestkitV % Test,
